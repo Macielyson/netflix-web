@@ -1,0 +1,276 @@
+/*Gerais*/
+body {
+    background: #000;
+}
+
+header {
+    padding: 50px;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+header img {
+    width: 150PX;
+}
+
+.btn-custom-white {
+    background-color: #FFF;
+}
+
+.btn-custom-translucent {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+}
+
+.btn-custom-translucent:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.btn-custom-white:hover {
+    opacity: 0.8;
+}
+
+.btn-custom-round {
+    padding: 5px 9px !important;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+/*login*/
+.bg_filmes {
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*cobri*/
+}
+
+#caixa_login {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-top: calc(50vh / 2);
+}
+
+/*Home*/
+.menu_list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 7px;
+}
+
+.menu_list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu_list li a {
+    color: #fff;
+}
+
+#hero {
+    height: 700px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+#hero::after {
+    content: '';
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    position: absolute;
+    left: 0;
+    top: calc(700px - 350px);
+    z-index: 2;
+}
+
+#hero_infos {
+    padding: 0px;
+    margin-top: 170px;
+    z-index: 3;
+    position: relative;
+}
+
+#hero_infos img.logo {
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+#hero_infos h1 {
+    margin-bottom: 20px;
+}
+
+#hero_infos h1 img {
+    width: 35px;
+    margin-top: -10px;
+    margin-right: 15px;
+}
+
+#main-content {
+    margin-top: 700px;
+}
+.btn + .btn {
+    margin-left: 10px;
+}
+
+.filme-lista {
+    overflow-x: hidden;
+    list-style: none;
+    white-space: nowrap;
+    padding: 20px 0px;
+    border: 1px solid transparent;
+    display: block;
+}
+
+.filme {
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+}
+
+.filme:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+    transform: 0.5s;
+}
+
+.filme:hover .filme-infor {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.filme:first-child {
+    margin-left: 100px;
+}
+
+.filme-infor {
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.filme-infor .col-12 {
+    margin-top: 5px;
+}
+
+.filme-infor .col-12:first-child {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.filme-infor p {
+    color: #7e7b7b;
+    font-size: 12px;
+}
+
+.filme-infor p text {
+    color: #fff;
+}
+
+section {
+    margin-bottom: -100px;
+    position: relative;
+}
+
+section:hover {
+    z-index: 9;
+}
+
+/*Modal*/
+.modal-dialog,
+.modal-content {
+    background: #171717;
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+.modal-hero {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+.modal-hero::after {
+    content: '';
+    width: 100%;
+    height: 237px;
+    display: block;
+    background: linear-gradient(180deg, rgba(39, 39, 39, 0.00) 0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -185px;
+    z-index: 1;
+}
+
+.modal-hero img {
+    width: 250px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.modal-hero-infos button {
+    margin-right: 20px;
+
+}
+
+.modal-hero-infos {
+    z-index: 2;
+}
+
+.filme-descricao {
+    color: #FFF;
+    font-size: 15px;
+}
+
+.filme-elenco {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+}
+
+.filme-elenco text {
+    color: #fff;
+}
+
+#lista-epsodios {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-epsodios li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#lista-epsodios li {
+    padding: 20px;
+}
+
+#lista-epsodios li p {
+    font-size: 13px;
+}
